@@ -273,7 +273,8 @@ nav ul li a {
     }
     .plants-lover-img-badge {
         
-        display: none;
+        display: none !important;
+        
     }
 
     .plants-lover {
