@@ -1,51 +1,67 @@
 .noto-serif-font {
-  font-family: "Noto Serif", serif;
-  font-optical-sizing: auto;
-  font-weight: <weight>;
-  font-style: normal;
-  font-variation-settings:
-    "wdth" 100;
-}
-.inter-font {
-  font-family: "Inter", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: <weight>;
-  font-style: normal;
+    font-family: "Noto Serif", serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+    font-variation-settings:
+        "wdth" 100;
 }
 
-*{
+.inter-font {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+}
+
+* {
     margin: 0;
     padding: 0;
 }
 
+/* shared */
+.text-description {
+    font-size: 1.3rem;
+    color: rgba(0, 0, 0, 0.5);
 
+}
 
+.btn {
+    width: 100%;
+    height: 50px;
+    color: white;
+    background-color: #E95A08;
+}
 
 /* nav section related style */
-nav{
+nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-top: 30px;
     margin-left: 150px;
     margin-right: 150px;
-    
+
 }
-nav ul{
+
+nav ul {
     display: flex;
-    
+
 }
-nav ul li{
+
+nav ul li {
     list-style: none;
     margin-right: 48px;
-    
+
 }
-nav ul li a{
+
+nav ul li a {
     text-decoration: none;
     color: black;
 }
+
 /* banner section related style */
-.banner{
+.banner {
     margin-top: 120px;
     margin-left: 150px;
     margin-right: 150px;
@@ -53,56 +69,151 @@ nav ul li a{
     justify-content: space-between;
     align-items: last baseline;
 }
-.banner-content{
+
+.banner-content {
     width: 570px;
-    
+
 }
-.banner-title{
+
+.banner-title {
     font-size: 4rem;
     font-weight: bold;
     margin-bottom: 13px;
 }
-.btc{
+
+.btc {
     color: #E95A08;
 }
-.banner-description{
-    font-size: 1.3rem;
-    color: rgba(0, 0, 0, 0.5);
-    
+
+
+/* plants section related style */
+.plants {
+    margin-left: 150px;
+    margin-right: 150px;
+
+
 }
- /* Responsive for smaller device */
- @media screen and (max-width:576px){
-    nav{
+
+.plants-info {
+    text-align: center;
+    margin-top: 120px;
+    margin-bottom: 50px;
+}
+
+.plants-title {
+    font-size: 3.12rem;
+    font-weight: bold;
+    margin-bottom: 16px;
+}
+
+.ptc {
+    color: #E95A08;
+
+}
+
+.plants-description {
+    width: 888px;
+    margin: 0 auto;
+}
+
+.plants-card {
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+
+
+}
+
+.card {
+    width: 270px;
+    /* height: 48px; */
+    border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.card-info {
+    text-align: center;
+
+}
+
+.card img {
+    margin-bottom: 30px;
+}
+
+.card-price {
+    margin-bottom: 30px;
+}
+
+/* Responsive for smaller device */
+@media screen and (max-width:576px) {
+
+    /* nav section related style */
+    nav {
         margin: 20px;
         width: 380px;
-        
+
     }
-    .nav-item{
+
+    .nav-item {
         display: none;
-        
+
     }
-    nav > img{
+
+    nav>img {
         width: 63px;
         height: 38px;
     }
-    nav ul li{
+
+    nav ul li {
         margin-right: 0;
     }
-    .banner{
-    flex-direction: column-reverse;
-    margin-left: 20px;
-    margin-right: 20px;
-    align-items: center;
-    text-align: left;
+
+    /* banner section related style */
+    .banner {
+        flex-direction: column-reverse;
+        margin-left: 20px;
+        margin-right: 20px;
+        align-items: center;
+        text-align: left;
+    }
+
+    .banner-content {
+        width: 390px;
+
+    }
+
+    .banner-img>img {
+        width: 390px;
+
+    }
+
+    /* plants section related style */
+    .plants {
+        margin-left: 10px;
+    }
+
+    .plants-info {
+        width: 390px;
+    }
+
+    .plants-description {
+        width: 390px
+    }
+
+    .plants-card {
+
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+        
+    }
+    .card>img{
+        width: 100%;
+        height: auto;
+    }
+    .card{
+        width: 190px;
+        
     }
     
-    .banner-content{
-    width: 390px;
-    
 }
-.banner-img >img{
-    width: 390px;
-    
-} 
-
- }
