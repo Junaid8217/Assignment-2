@@ -190,6 +190,78 @@ nav ul li a {
 
 }
 
+/* Latest deal section related sty;le */
+.latest-deal {
+    width: 100%;
+    height: 138px;
+
+    margin-top: 133px;
+}
+
+.latest-deal-info {
+    text-align: center;
+    /* justify-content: center;
+    align-items: center; */
+
+}
+
+.latest-deal-info-title {
+    font-size: 3.12rem;
+    margin-bottom: 16px;
+}
+
+.ldt {
+    color: #E95A08;
+}
+
+.latest-deal-info-dsecription {
+    /* width: 888px;
+    height: 54px; */
+
+}
+.latest-deal-layout{
+    margin-left: 150px;
+    margin-right: 150px;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 138px;
+}
+.latest-deal-layout1{
+    width: 367px;
+    height: 423px;
+    
+    
+}
+.latest-deal-layout2{
+    width: 753px;
+    height: 424px;
+    background-color: grey;
+    border-radius: 10px;
+    background-image: url(../assets/deal-zabo.png); 
+    filter: opacity(0.5);
+  
+    
+}
+.latest-deal-layout1-1{
+    width: 367px;
+    height: 206px;
+    
+    margin-bottom: 10px;
+    border-radius: 10px;
+    background-image: url(../assets/deal-bloom.png);
+    /* background-repeat: no-repeat;
+     */
+}
+.latest-deal-layout1-2{
+    width: 367px;
+    height: 206px;
+    background-color: gray;
+    border-radius: 10px;
+    
+    background-image: url(../assets/deal-ana.png);
+    
+}
 /* Responsive for smaller device */
 @media screen and (max-width:576px) {
 
@@ -268,28 +340,32 @@ nav ul li a {
         width: 390px;
 
     }
-    .plants-lover-info-title{
+
+    .plants-lover-info-title {
         width: 390px;
     }
+
     .plants-lover-img-badge {
-        
+
         display: none !important;
-        
+
     }
 
     .plants-lover {
-        
+
         margin-left: 10px;
         margin-right: 10px;
         flex-direction: column;
         margin-top: 40px;
-        
+
     }
-    .plants-lover-info{
+
+    .plants-lover-info {
         width: 361px;
     }
-    .plants-lover-info-description{
+
+    .plants-lover-info-description {
         width: 390px;
     }
-    
+
 }
