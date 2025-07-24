@@ -345,7 +345,32 @@ nav ul li a {
     width: 180px;
     height: 55px;
 }
-
+/* Footer section related style */
+.footer{
+    margin-left: 160px;
+    margin-right: 160px;
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-around;
+}
+.footer-info{
+    width: 360px;
+    height: 180px;
+}
+.footer-info img{
+    margin-bottom: 16px;
+}
+.footer-link li{
+    list-style: none;
+    margin-bottom: 26px;
+}
+.footer-link a{
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.5);
+}
+.footer-icon img{
+    margin-right: 20px;
+}
 /* Responsive for smaller device */
 @media screen and (max-width:576px) {
 
@@ -510,4 +535,15 @@ nav ul li a {
         width: 80px;
         height: 35px;
     }
+    /* footer section related style */
+    .footer{
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 50px;
+    flex-direction: column;
+}
+.footer-info{
+    margin-bottom: 30px;
+}
+
 }
